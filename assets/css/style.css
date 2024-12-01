@@ -1,0 +1,903 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Signika, "san-serif";
+}
+
+@keyframes harry1 {
+    from {
+        left: -501px;
+    }
+
+    to {
+        left: 0px;
+    }
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+/* .................................................Header................................................ */
+/* .................................................For PC................................................ */
+/* ............First Line..................... */
+/* .................of........................ */
+/* ...............Navbar...................... */
+header {
+    position: relative;
+}
+
+header .pc_navbar .first_line {
+    display: flex;
+    justify-content: space-between;
+    min-height: 7vh;
+}
+
+header .pc_navbar .first_line .right,
+.left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .pc_navbar .first_line .right {
+    margin-right: 20px;
+}
+
+header .pc_navbar .first_line .right a {
+    color: grey
+}
+
+header .pc_navbar .first_line .left {
+    margin-left: 11px;
+}
+
+header .pc_navbar .first_line ul li a {
+    text-decoration: none;
+    color: black;
+
+}
+
+header .pc_navbar .first_line ul li {
+    list-style-type: none;
+    margin: 13px;
+}
+
+header .pc_navbar .first_line .right .dropdown button {
+    cursor: pointer;
+    height: 24px;
+    border: none;
+    background: none;
+    display: flex;
+    align-items: center;
+
+}
+
+header .pc_navbar .first_line .right .dropdown button .icon-dropdown {
+    font-size: 9px;
+    color: grey;
+
+}
+
+header .pc_navbar .first_line .right .dropdown a {
+    display: block;
+    padding: 10px 15px;
+
+}
+
+header .pc_navbar .first_line .right .dropdown a:hover {
+    color: blue;
+    text-decoration: underline;
+
+}
+
+header .pc_navbar .first_line .right .dropdown .content {
+    position: absolute;
+    box-shadow: 8px 6px 20px -14px;
+    width: 199px;
+    display: none;
+
+}
+
+header .pc_navbar .first_line .right .dropdown button:hover .dropdown .content {
+    display: block;
+
+}
+
+.active {
+    font-weight: bold;
+    text-decoration: dashed;
+    position: relative;
+
+}
+
+.active:after {
+    content: '';
+    position: absolute;
+    background-color: #0b6ef7;
+    height: 1px;
+    left: -2px;
+    width: 100%;
+    bottom: -2px;
+
+    width: 65px;
+
+}
+
+header .pc_navbar .last_line {
+    margin-top: 20px;
+    margin-bottom: 24px;
+}
+
+header .pc_navbar .first_line .right .dropdown .content {
+    background-color: white;
+}
+
+/* ............Logo............... */
+header .pc_navbar .logo {
+    margin: 23px 0px 23px 22px;
+}
+
+
+header .pc_navbar .last_line {
+    margin-top: 20px;
+}
+
+header .pc_navbar .last_line ul {
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+}
+
+header .pc_navbar .last_line ul li {
+    position: relative;
+    list-style-type: none;
+}
+
+header .pc_navbar .last_line ul li a {
+    color: black;
+    text-decoration: none;
+
+
+}
+
+header .pc_navbar .last_line ul li::after {
+    content: '';
+    position: absolute;
+    background-color: #0b6ef7;
+    height: 3px;
+    left: 0;
+    width: 100%;
+    bottom: -2px;
+    display: none;
+
+}
+
+header .pc_navbar .last_line ul li:hover::after {
+    display: block;
+
+}
+
+/* ...........Mobile navbar .........*/
+header .open_button {
+    font-weight: 900;
+    background: none;
+    cursor: pointer;
+    border: none;
+    font-size: 19px;
+    display: none;
+    /* display: block; */
+    /* margin: 17px; */
+}
+
+header .mobile_navbar_permanent {
+    display: none;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+header .mobile_navbar_temp {
+    display: none;
+}
+
+
+
+
+
+
+/* Navbar temp */
+
+
+header .open_button {
+
+    display: none;
+    /* display: flex; */
+    margin-top: -12px;
+}
+
+
+
+header .mobile_navbar_permanent {
+
+    display:none;
+    height: 20vh;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header .mobile_navbar_permanent .but .signin {
+    background: #0060f0;
+    cursor: pointer;
+    height: 36px;
+    width: 80px;
+    border: none;
+    color: white;
+    border-radius: 3px;
+    font-size: 18px;
+}
+
+header .mobile_navbar_permanent .but .signin:hover {
+    background-color: #0453ca;
+}
+
+header .mobile_navbar_permanent .but .fa-bars {
+    font-weight: 900;
+    color: grey;
+    font-size: 21px;
+    margin: 9px 0px 0px 8px;
+}
+
+
+header .mobile_navbar_temp {
+    box-shadow: 15px 22px 32px -23px;
+    /* display: flex; */
+    /* upper to be changed */
+    /* border: 1px solid black; */
+    left: -501px;
+    width: 240px;
+    min-height: 100vh;
+    position: absolute;
+    /* border: 1px solid black; */
+    /* width: 33%;
+    min-height: 100vh;
+    position: absolute; */
+    background-color: white;
+    flex-direction: column;
+}
+
+header .mobile_navbar_temp .body {
+    overflow-y: auto;
+    max-height: 80vh;
+    position: relative;
+}
+
+
+header .mobile_navbar_temp .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 20vh;
+    /* position: absolute; */
+}
+
+header .mobile_navbar_temp .header .crossbutton {
+    font-weight: 900;
+    height: 26px;
+    background: none;
+    border: none;
+    font-size: 24px;
+}
+
+header .mobile_navbar_temp {
+    /* display: none; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    padding-left: 22px;
+}
+
+header .mobile_navbar_temp .body li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 79%;
+    margin-left: 21px;
+    margin-top: 14px;
+    cursor: pointer;
+    position: relative;
+    height: 30px;
+}
+
+header .mobile_navbar_temp .body li a {
+    text-decoration: none;
+}
+
+header .mobile_navbar_temp .body li::after {
+    content: '';
+    position: absolute;
+    background-color: #cfddf0;
+    height: .5px;
+    left: 0;
+    width: 100%;
+    bottom: -2px;
+    /* display: none; */
+}
+
+header .mobile_navbar_temp .body ul li:hover:after {
+    background-color: #0060f0;
+    transition: .3s;
+}
+
+.underlined {
+    display: flex;
+    height: 38px;
+    margin-top: 32px;
+}
+
+@media (max-width:950px) {
+    header .open_button {
+
+        display: flex;
+      
+    }
+    header .pc_navbar {
+        display: none;
+    }
+    header .mobile_navbar_permanent {
+
+        display: flex;
+        
+    }
+
+}
+
+
+
+
+/* ..................................Main................................... */
+/* ..................................Main................................... */
+/* ..................................Main................................... */
+/* ........................hero................ */
+main .hero {
+    height: 100vh;
+    background: #2770bd;
+    height: 71vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+}
+main .hero h1 {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+main .second_section p {
+    font-size: 18px;
+}
+
+main .hero .second_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 35vh;
+}
+
+main .second_section button {
+    cursor: pointer;
+    background: green;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    border-radius: 7px;
+}
+
+main .second_section button:hover {
+
+    background: rgb(3, 100, 3);
+
+}
+
+main .hero .contai {
+    display: flex;
+}
+
+main .hero .third_section {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: white;
+    flex-direction: column;
+    border-radius: 3px;
+    width: 25vw;
+    height: 48vh;
+    color: black;
+}
+
+main .hero .third_section .input {
+    height: 13%;
+    width: 88%;
+    border: 1px solid grey;
+
+    padding-left: 6px;
+    outline: none;
+}
+
+main .hero .third_section .checkbox input {
+    width: 15px;
+}
+
+main .hero .third_section .checkbox {
+
+    display: flex;
+    justify-content: space-between;
+    margin-right: 11px;
+    width: 89%;
+}
+
+main .hero .third_section button {
+
+    background: blue;
+    border: none;
+    color: white;
+    width: 89%;
+    height: 31px;
+    font-size: 17px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+main .hero .third_section a:hover {
+    color: #0060f0;
+}
+main .hero .chckbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+@media (max-width:950px) {
+    main .hero .third_section {
+        display: none;
+    }
+
+    main .hero .first_section img {
+        height: 130px;
+        margin-top: 26px;
+    }
+
+    main .hero .second_section h1 {
+        font-size: 25px;
+    }
+
+    main .hero .second_section p {
+        font-size: 15px;
+    }
+
+    main .hero .second_section button {
+        font-size: 15px;
+        width: 139px;
+    }
+
+    
+}
+
+@media (max-width:420px) {
+    main .hero .third_section {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 21vh;
+    }
+    main .hero .second_section {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 24vh;
+    }
+    main .hero .second_section p{
+      font-size: 12px;
+    }
+    main .hero .third_section {
+        display: none;
+    }
+
+    main .hero .first_section img {
+        height: 90px;
+        margin-top: 30px;
+    }
+
+    main .hero .second_section h1 {
+        font-size: 20px;
+    }
+
+    main .hero .second_section p {
+        font-size: 10px;
+    }
+
+    main .hero .second_section button {
+        font-size: 15px;
+        width: 139px;
+    }
+}
+
+/* ................scrollSection................... */
+main .scrollsection{
+    max-width: 99vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;    
+    margin-top: 19px;
+    min-height: 50vh;
+
+}
+main .scrollsection h1{
+    /* font-size: 25px; */
+    font-size: 29px;
+    font-weight: 200;
+}
+ .horizontal-scroll .items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    flex: 0 0 33.33%; /* Show only 3 items at a time */
+    cursor: pointer;
+    text-align: center;
+    padding: 10px;
+    font-size: 24px;
+ 
+ }
+ .horizontal-scroll {
+    max-width: 100%;
+    margin-top: 20px;
+    display: flex;
+    /* overflow: hidden; */
+    overflow-x: scroll;
+}
+
+.horizontal-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+/* .horizontal-scroll .scroll-content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    padding: 10px;
+    flex: none;
+} */
+.scroll-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.dot.active1 {
+    background-color: #333;
+}
+
+/* 
+ .horizontal-scroll{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+    display: flex;
+    overflow: hidden;
+    overflow-x: scroll;
+
+} 
+ .horizontal-scroll::-webkit-scrollbar{
+    display: none;
+
+} 
+.horizontal-scroll div{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap:20px ;
+    padding: 10px;
+    flex: none;
+} */
+
+
+/* ..........section3............. */
+.section3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main .section3 .desktop{
+    /* display: none; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+main .section3 .mobile{
+    /* display: flex; */
+    display: none;
+    width: 97%;
+    height: 97%;
+    align-items: center;
+    margin-bottom: 12px;
+    justify-content: space-around;
+    flex-direction: column;
+}
+main .section3 .mobile img{
+    margin-bottom: 12px;
+}
+main .section3 .desktop img{
+    width: 96%;
+    margin-bottom: 15px;
+}
+/* main .section3 .mobile{
+    display: none;
+} */
+@media (max-width:777px) {
+    main .section3 .desktop{
+        display: none;
+
+    }
+    main .section3 .mobile{
+        display: flex;
+        /* display: none; */
+     
+    }
+
+
+
+    
+}
+
+hr{
+    text-align: center;
+    margin: 12px 0px;
+    width: 100vw;
+    color: black;
+    height: 1px;
+}
+
+/* ..............section4............. */
+.section4{
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.section4 h1,.section5 h1,.section6 h1{
+    font-size: 45px;
+}
+.section4 button{
+    background-color: green;
+    color: white;
+    border: none;
+    height: 36px;
+    width: 147px; 
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.section4 button:hover{
+    background-color: rgb(6, 103, 6);
+}
+/* .section4 img{
+
+} */
+@media (max-width:950px){
+    .section4 h1{
+        font-size: 32px;
+    }
+    .section4 img{
+        height: 130px;
+    }
+}
+@media (max-width:777px){
+    .section4 h1{
+        font-size: 25px;
+    }
+    .section4 p{
+        font-size: 14px;
+    }
+}
+@media (max-width:500px){
+    .section4 h1{
+        font-size: 25px;
+    }
+    .section4{
+        flex-direction: column;
+    }
+    .section4 {
+        font-size: 14px;
+    }
+}
+
+
+
+
+/* ..................section 5................ */
+.section5,.section6{
+    display: flex;
+    align-items: center;
+    min-height: 60vh;
+    justify-content: space-around;
+}
+.section5 button{
+    background-color: green;
+    color: white;
+    border: none;
+    height: 36px;
+    width: 147px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.section5 button:hover{
+    background-color: rgb(6, 103, 6);
+}
+.section6 button{
+    background-color: blue;
+    color: white;
+    border: none;
+    height: 36px;
+    width: 147px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.section6 button:hover{
+    background-color: rgb(34, 34, 206);
+}
+
+@media (max-width:950px){
+    .section5 h1, .section6 h1 {
+        font-size: 35px;
+    }
+    .section5 .second, .section6 .second {
+        margin-left: 20px;
+         /* font-size: 35px; */
+    }
+
+}
+@media (max-width:570px){
+    .section5 , .section6 {
+        flex-direction: column;
+    }
+    .section5 img , .section6 img {
+        flex-direction: column;
+        height: 125px;
+    }
+    .section5 .second, .section6 .second {
+        margin-left: 20px;
+         /* font-size: 35px; */
+    }
+
+}
+
+/* ..............section7.................. */
+.section7 i{
+    margin: 0px 17px;
+    font-size: 22px;
+}
+.section7 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ....................................................................... */
+/* ....................................................................... */
+/* ....................................................................... */
+/* footer */
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:#f7f7f7;
+}
+footer .first{
+    width: 101vw;
+    display: flex;
+    color: #696969;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    margin-top: 23px;
+    background-color: #f7f7f7;
+    min-height: 100vh;
+}
+footer .first .content{
+    width: 15%;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    text-align: justify;
+    margin-top: 103px;
+}
+
+footer .first .content .heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer .first .con2 {
+    font-size: 12px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+footer .first .con1{
+    margin-top: 48px;
+}
+
+footer .second, .third {
+    background: #f7f7f7;
+}
+@media (max-width:860px) {
+    footer .first .con2{
+        flex-direction: column;
+    }
+    footer .first .content {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        /* justify-content: center; */
+        flex-direction: row;
+        text-align: justify;
+        margin-top: 103px;}
+        footer .first .content .heading {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            margin-left: 21px;
+            margin-right: 37px;
+        }
+        footer .first .content .heading i{
+            margin-right: 28px;
+        }
+}
+
+
+
+
+footer .third {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 43px;
+}
+footer .third p{
+    width: 90%;
+    font-size: 12px;
+    line-height: 2;
+    text-align: center;
+}
+footer.last{
+    margin-top: 17px;
+    font-size: 14px;
+}
