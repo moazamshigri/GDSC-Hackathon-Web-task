@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Signika;
+
+}
+body{
+    background-color: #fff5ec;
+}
+/* ..............Styling for Header........ */
+
+/* ......................Desktop header................. */
+
+header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 13vh;
+}
+header .navbar-desktop{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+header .navbar-desktop .logo img{
+    height: 33px;
+}
+header .navbar-desktop  ul li{
+    list-style-type: none;
+}
+header .navbar-desktop  ul li .active{
+    color: #f59844 ;
+}
+header .navbar-desktop  ul li a{
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+header .navbar-desktop  ul li a:hover{
+ 
+    color: rgb(90, 88, 88);
+    text-decoration: none;
+}
+header .navbar-desktop ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 245px;
+}
+header .navbar-desktop .login-signup{
+    display: flex;
+    justify-content: space-evenly;
+
+    align-items: center;
+    width: 118px;
+}
+header .navbar-desktop .login-signup .login{
+    cursor: pointer;
+    font-weight: bold;
+}
+header .navbar-desktop .login-signup .login:hover{
+    color: rgb(69, 69, 69);
+}
+header .navbar-desktop .login-signup .signup{
+    background: #f59844;
+    padding: 7px;
+    border-radius: 19px;
+    color: white;
+    font-weight: bold;
+    /* width: 80px; */
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* margin-left: 11px; */
+    cursor: pointer;
+}
+header .navbar-desktop .login-signup .signup:hover{
+    background: #de812f;
+    
+}
+/* ......................Mobile Navbar................. */
+header .navbar-mobile{
+    /* display: flex; */
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+}
+header .navbar-mobile button:hover{
+    color: #65482f;
+    transition: .5s;
+}
+header .navbar-mobile img{
+    height: 30px;
+}
+header .navbar-mobile button{
+    height: 25px;
+    width: 33px;
+    font-size: 20px;
+    color: #f2994a;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+/* ......................Adding some responsiveness................. */
+
+@media (max-width:602px) {
+    header .navbar-mobile {
+        display: flex;
+    }
+    header .navbar-desktop{
+        display: none;
+    }
+}
+
+
+/* .........................Hero Section.............. */
+
+main .hero{
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hero .right img{
+    height: 86vh;
+}
+.hero .left{
+    display: flex;
+    flex-direction: column;
+    
+}
+.hero .left{
+    width: 42%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 84px;
+    height: 76vh;
+    justify-content: center;
+    
+}
+.hero .left h1{
+    font-size: 42px;
+}
+
+.hero .left .search{
+    margin-top: 12px;
+    width: 435px;
+    background: white;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 13px;
+}
+.search input{
+    /* border: none; */
+    border-radius: 12px;
+    padding: 2%;
+    border: 1px solid grey;
+
+}
+.search button{
+    background: #f59844;
+    padding: 7px;
+    border-radius: 19px;
+    color: white;
+    font-weight: bold; cursor: pointer;
+    border: none;
+
+}
+
+
+/* .........................first section.......... */
+.firstsection{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 34vh;
+    justify-content: center;
+}
+.firstsection .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    margin-top: 36px;
+}
+.firstsection .content img{
+    height: 25px;
+}
+
+.third
+{
+height: 20vh;
+}
+/* .........................footer......... */
+footer{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 67vh;
+}
+footer .up .m{
+    /* border: 1px solid black; */
+    width: 22%;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* justify-content: space-evenly; */
+    line-height: 35px;
+    margin-bottom: 40px;
+}
+footer .up .n{
+    align-items: center;
+}
+footer .up .n li{
+    list-style-type: none;
+}
+footer .up .n li a{
+   color: black;
+   text-decoration: none;
+}
+footer .up .n li a:hover{
+   color: black;
+   text-decoration: underline;
+}
+
+.logo img{
+    height: 33px;
+}
+.up{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
